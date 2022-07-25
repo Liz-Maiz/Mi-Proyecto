@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidia Maiz</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#inicio">
+            <!--si cliquea en el logo puede ir a inicio al igual que con el item inicio-->
+
+            <img src="cositas/eidos2.png" class="logo" alt="logo de eidos">
+
+        </a>
+
+        <button id="menu_hamburguer">
+
+            <img src="cositas/bars-solid.svg" id="open">
+
+            <img src="cositas/x-solid.svg" id="close">
+
+        </button>
+
+        <!---->
+        <nav>
+
+            <ul id="nav-menu">
+                <!--coloco un id para el ul que contiene los items para que sea facil recordar este id lo nombro con primero como la etiqueta donde esta contenido y le agrego su descripcion en este caso es el menu.
+            .......................Lo mismo hago con cada li perteneciente a cada item.-->
+                <li class="nav-item active">
+
+                    <a href="#inicio" class="menu_link">
+                        Inicio
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="#contacto" class="menu_link">
+                        Contacto
+                    </a>
+
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <br>
+
+    <main>
+
+        <section id="inicio">
+
+            <figure>
+                <img class="imagen" src="cositas/lidia_maiz.jpg" alt="Foto de Lidia Maiz">
+
+            </figure>
+
+            <article>
+
+                <h1>Hola! Soy Liz</h1>
+
+                <p>Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Siempre
+                    tengo la mejor disposición para la realizacion de mis labores. Busco un puesto desafiante donde
+                    pueda continuar aprendiendo y desarrolando mis habilidades.</p>
+
+                <a class="boton" href="cositas/Lidia Teresa Maiz.pdf" target="_blank">Descargar mi CV</a>
+                <!--Le coloco un id al ancla para poder darle el efecto de boton con CSS-->
+
+            </article>
+
+
+
+        </section>
+
+        <section id="contacto">
+
+            <article class="texto">
+
+                <h2>Hablemos!</h2>
+
+                <p>Soy técnica superior en informática, me recibí en la escuela de subofiales de la armada en 2019 y soy
+                    personal militar en actividad. Me encuentro actualmente abierta a nuevas posibilidades de trabajo
+                    con el fin de perfeccionarme en mi carrera. Me considero eficiente y cabal, esto se debe a mi
+                    formación militar. Al momento de un problema o dificultad busco la solución con el fin de aprender
+                    como meta personal y para contribuir en mi ámbito laboral, no me quedo con el "no sé" sino que busco
+                    alternativas. Durante mi corta carrera como informática trabaje durante un año en soporte técnico y
+                    redes(2019-2020), actualmente me encuentro trabajando en un centro de datos(2020-2022), mi puesto es
+                    administrador de centro de datos. Maneje active directory, realice tareas de backup con veean
+                    backup, trabaje con servidores file server y me encuentro aprendiendo sobre infraestructura e
+                    implementación, además de programación que es mi debilidad. Estoy dispuesta a aprender nuevas
+                    técnicas de ser necesario y seguir capacitándome con el fin de mejorar profesionalmente y
+                    personalmente.</p>
+
+            </article>
+
+            <ul id="section-contacto">
+                <li class="iconos">
+                    <a href="mailto:liidiiamaiz@gmail.com?subject=Hola%20queremos%20comunicarnos%20con%20usted"
+                        target="_blank">
+
+                        <img class="iconos" src="cositas/mail.png" alt="Icono Email">
+
+                    </a>
+
+                </li>
+
+                <li class="iconos">
+
+                    <a href="https://github.com/" target="_blank">
+
+                        <img class="iconos" src="cositas/github.png" alt="Icono Github">
+
+                    </a>
+
+                </li>
+
+                <li class="iconos">
+
+                    <a href="https://www.linkedin.com" target="_blank">
+
+                        <img class="iconos" src="cositas/linkedin.png" alt="Logo Linkedin">
+
+                    </a>
+
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+
+        <h6>Codigo Latam Lidia Maiz</h6>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

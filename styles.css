@@ -1,0 +1,433 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador. 
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /*FUENTE ALTERNATIVA*/
+    font-size: 18px;
+    /*TAMAÑO DE FUENTE*/
+    line-height: 1.2;
+    /*INTERLINEADO*/
+    background-color: #FBFBFB;
+    /*COLOR DE FONDO*/
+    color: #0f0f0f;
+    /*COLOR DE FUENTE*/
+
+    /*EFECTOS DE LINEA SOMBREADA*/
+}
+
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: 100px 5px;
+}
+
+h1 {
+    /* font-size: 48px;*/
+    /*TAMAÑO DE FUENTE*/
+    font-size: 36px;
+    text-align: center;
+}
+
+/*----CORRECCION--*/
+
+
+h2 {
+    /*TAMAÑO DE FUENTE*/
+    font-size: 28px;
+}
+
+p {
+    margin: 16px 0;
+    /* ESPACIO ENTRE PARRAFOS*/
+}
+
+header {
+    display: flex;
+    /*PANTALLA FLEXIBLE para que se acomode el logo de un lado y lista de enlaces del otro*/
+    justify-content: space-between;
+    /*JUSTIFICAR CONTENIDO ESPACIO ENTRE separar elementos*/
+    align-items: center;
+    /*ALINEACION DE ELEMENTOS CENTRO para centrarlos*/
+    padding: 10px;
+    /*RELLENO*/
+    height: 90px;
+    /*ALTURA del header 90px*/
+    width: 100%;
+    /*ANCHO*/
+    background-color: #fbfbfb;
+    /*COLOR DE FONDO*/
+    /*para que quede fijo*/
+    position: fixed;
+    /*POSICION FIJO*/
+    top: 0;
+    /*SUPERIOR*/
+    left: 0;
+    /*IZQUIERDA*/
+    /*para agregarlo sombra*/
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+    /*CAJA SOMBRA*/
+    position: fixed;
+    /*para que el menu me acompañe utilizo esta propiedad*/
+
+}
+
+.logo {
+    width: 120px;
+}
+
+nav {
+    display: none;
+}
+
+#nav-menu {
+    display: flex;
+    /*separacion de ul*/
+    font-size: 20px;
+    /*espacio de parrafos: 20px arriba y debajo de cada parrafo*/
+}
+
+.nav-item a {
+    padding: 16px;
+    display: inline-block;
+}
+
+
+.iconos:hover,
+.nav-item:hover {
+    /*PERMITE PASAR EL CURSOR SOBRE EL MENU Y LO PINTA DE COLOR */
+    background-color: rgba(175, 89, 158, 0.3);
+    transition: background-color 0.3s;
+    /*hace que el color aparezca de a poco*/
+}
+
+/*--BOTON--*/
+
+#menu_hamburguer {
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+}
+
+img#close {
+    display: none;
+
+}
+
+body.mobile-menu-active img#close {
+
+    display: block;
+}
+
+body.mobile-menu-active img#open {
+
+    display: none;
+}
+
+body.mobile-menu-active header {
+
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.3s;
+}
+
+body.mobile-menu-active nav {
+
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.mobile-menu-active ul#nav-menu {
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+body.mobile-menu-active {
+
+    overflow: hidden;
+    ;
+}
+
+
+/*main*/
+/*estilos generales */
+
+section {
+    /*.......USAMOS FLEXBOX....*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /*esta propiedad permite distribuir los contenidos (imagen y texto)*/
+
+    min-height: 100vh;
+    /*Lugar para el header*/
+    padding-top: 90px;
+}
+
+/*-----CORRECCION--*/
+/*section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+section#inicio {
+    /*flex direction: row;*/
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+article {
+    /* width: 50%;*/
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+}
+
+
+img.imagen {
+    width: 400px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+
+
+.boton {
+    padding: 12px 20px;
+    background-color: #af599e;
+    color: white;
+    border-top-right-radius: 15% 50%;
+    border-top-left-radius: 15% 50%;
+    border-bottom-left-radius: 15% 50%;
+    border-bottom-right-radius: 15% 50%;
+    display: inline-block;
+
+}
+
+.boton:hover {
+    background-color: rgba(175, 89, 158, 0.8);
+    transition: background-color 0.3s;
+}
+
+img.iconos {
+    width: 100px;
+    padding: 20px;
+}
+
+#contacto {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#section-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: auto;
+
+}
+
+article.texto {
+    background: rgba(175, 89, 158, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#footer {
+    height: 90px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #af599e;
+    color: #fbfbfb;
+
+
+
+}
+
+@media (mini-width: 1024px) {
+    section {
+        flex-direction: row;
+        
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    main {
+    align-content: center;
+    }
+}
+
+
+/*
+@media (max-width : 800px) {
+    .menu_hamburguer {
+        display: flex;
+    }
+}*/
+
+/*----ESTILOS DESKTOP--*/
+@media (min-width:1024px) {
+
+    h1 {
+
+        font-size: 48px;
+        text-align: left;
+
+    }
+
+    h2 {
+
+        font-size: 32px;
+
+    }
+
+    section#inicio {
+
+        flex-direction: row;
+
+    }
+
+    article {
+
+        width: 50%;
+
+    }
+
+    #menu_hamburguer {
+
+        display: none;
+
+    }
+
+    nav {
+
+        display: block;
+
+    }
+
+
+}
+
+
+
+
+/*
+.nav-menu {
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    background-color: #af599e;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+}
+.menu_link {
+    padding: 25px;
+    padding-left: 30px;
+    display: flex;
+    display: auto;
+
+
+}*/
+
+/*
+div {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.menu_hamburguer {
+    height: 100%;
+    padding: 0 15px;
+    cursor: pointer;
+    /*display: none;*/
+/*}*/
+
+/*.menu_img {*/
+/*display: block;*/
+/* width: 36px;*/
+
+
+/*}*/
+
+
+
+
+
+
+
+
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
