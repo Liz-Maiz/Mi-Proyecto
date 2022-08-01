@@ -33,9 +33,9 @@ body {
     /*TAMAÑO DE FUENTE*/
     line-height: 1.2;
     /*INTERLINEADO*/
-    background-color: #FBFBFB;
+    background-color: rgb(238, 244, 237);
     /*COLOR DE FONDO*/
-    color: #0f0f0f;
+    color: #000000;
     /*COLOR DE FUENTE*/
 
     /*EFECTOS DE LINEA SOMBREADA*/
@@ -94,7 +94,7 @@ header {
     /*ALTURA del header 90px*/
     width: 100%;
     /*ANCHO*/
-    background-color: #fbfbfb;
+    background-color: rgb(11, 37, 69);
     /*COLOR DE FONDO*/
     /*para que quede fijo*/
     position: fixed;
@@ -104,7 +104,7 @@ header {
     left: 0;
     /*IZQUIERDA*/
     /*para agregarlo sombra*/
-    box-shadow: 0 3px 10px -5px #5f5f5f;
+    box-shadow: 0 3px 10px -5px #6a6868;
     /*CAJA SOMBRA*/
     position: fixed;
     /*para que el menu me acompañe utilizo esta propiedad*/
@@ -129,15 +129,17 @@ nav {
 .nav-item a {
     padding: 16px;
     display: inline-block;
+    color: #fbfbfb;
 }
 
 
 .iconos:hover,
 .nav-item:hover {
     /*PERMITE PASAR EL CURSOR SOBRE EL MENU Y LO PINTA DE COLOR */
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgb(141, 169, 196);
     transition: background-color 0.3s;
     /*hace que el color aparezca de a poco*/
+    
 }
 
 /*--BOTON--*/
@@ -232,6 +234,7 @@ article {
     width: 90%;
     margin: 10px;
     text-align: center;
+    
 }
 
 
@@ -245,7 +248,7 @@ img.imagen {
 
 .boton {
     padding: 12px 20px;
-    background-color: #af599e;
+    background-color: rgb(19, 49, 92);
     color: white;
     border-top-right-radius: 15% 50%;
     border-top-left-radius: 15% 50%;
@@ -256,7 +259,7 @@ img.imagen {
 }
 
 .boton:hover {
-    background-color: rgba(175, 89, 158, 0.8);
+    background-color: rgb(141, 169, 196);
     transition: background-color 0.3s;
 }
 
@@ -281,10 +284,11 @@ img.iconos {
 }
 
 article.texto {
-    background: rgba(175, 89, 158, 0.3);
+    background: rgb(141, 169, 196);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+    color: #fbfbfb;
 }
 
 
@@ -294,7 +298,7 @@ article.texto {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #af599e;
+    background-color: rgb(11, 37, 69);
     color: #fbfbfb;
 
 
